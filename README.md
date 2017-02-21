@@ -6,9 +6,8 @@ The pipeline was designed for parallel processing on a Portable Batch System (PB
 
 ##Dependencies:
 
-g++ (GCC) 4.9.2
-
-Mugsy 1.2.3 http://mugsy.sourceforge.net/
+* g++ (GCC) 4.9.2
+* Mugsy 1.2.3 http://mugsy.sourceforge.net/
 
 ##To run:
 
@@ -16,16 +15,12 @@ Mugsy 1.2.3 http://mugsy.sourceforge.net/
 ```
 mkdir /home/zhouw/pandb
 ```
-
 * Move the downloaded scripts folder into the database directory
 ```
 mv /download_path/scripts /home/zhouw/pandb
 ```
-
 * Specify the path of the database directory and the path of the mugsy directory in env_var.sh
-
 * Download assembly summary files from [NCBI](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#asmsumfiles) and place it under the database folder. Rename the assembly summary files to the following format: assembly_summary.KINGDOM.txt. For example, the assembly summary file for bacterial genomes will be named: assembly_summary.bacteria.txt
-
 * Run wrapper.sh for each kingdom, specifying the number of jobs to create and the resources to request for each job. The wrapper script will download all assemblies, create and send jobs to the PBS system. For example, for bacteria, to create 50 jobs, each requesting 100-hour walltime, 16gb memory, running on one node and one processor:
 ```
 cd /home/zhouw/pandb/scripts
