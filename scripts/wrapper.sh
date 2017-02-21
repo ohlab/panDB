@@ -15,6 +15,7 @@ sed -i "s/$quote/_/g" "assembly_summary.$1.txt"
 sed -i "s/\"/_/g" "assembly_summary.$1.txt"
 mkdir "library_test_$1"
 cat "assembly_summary.$1.txt" | xargs -I {} ./scripts/download_fna.sh $1 {}
+mkdir genome_all_v2
 
 #--------------2. generate representative list---------------
 
