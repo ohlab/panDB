@@ -1,12 +1,30 @@
-source env_var.sh
+#!/bin/bash
 
-cd "$panDB_dir"
+#   PanDB compilation pipeline
+#   Copyright (C) 2017 Wei Zhou
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   any later version.
+
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #=========args=========
 # $1=kingdom
 # $2=number of PBS jobs
 # $3=qsub resource string
 #======================
+
+source env_var.sh
+
+cd "$panDB_dir"
 
 #--------------1. download data-----------------
 
