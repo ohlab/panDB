@@ -1,15 +1,15 @@
-#panDB
+# panDB
 
 The pipeline was used to generate panDB, a microbial reference database that contains pan-genomes of all bacterial, archaeal, fungal and viral species.
 
 The pipeline was designed for parallel processing on a Portable Batch System (PBS).
 
-##Dependencies:
+## Dependencies:
 
 * g++ (GCC) 4.9.2
 * Mugsy 1.2.3 http://mugsy.sourceforge.net/
 
-##To run:
+## To run:
 
 * Make a directory to store the intermediate and database files
 ```
@@ -29,7 +29,7 @@ cd /home/zhouw/pandb/scripts
 
 * All pan-genome sequences will be stored in the genome_all_v2 subfolder under the database directory. Each species will have an individual fasta file, named in the following format: KINGDOM_taxID.fa.For example, the pan-genome sequence of Staphylococcus aureus will be named bacteria_1280.fa
 
-##Miscs:
+## Miscs:
 
 The pipeline will not clean up the downloaded raw assembly files. All assembly files, as well as PBS jobs to extract pan-genome sequences, will be stored in the folder: library_test_KINGDOM. For example, all assembly files and jobs for bacterial genomes will be stored in library_test_bacteria.
 
