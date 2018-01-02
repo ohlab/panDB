@@ -41,7 +41,9 @@ cat "assembly_summary.$1.txt" | grep -F "representative genome" | awk -F '\t' '{
 
 #--------------3. prepare qsub jobs-----------------
 
-./scripts/job_alloc.sh $1 $2 $3
+cd scripts
+./job_alloc.sh $1 $2 $3
+cd ..
 
 #--------------4. submit jobs-----------------
 
