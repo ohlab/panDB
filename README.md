@@ -1,8 +1,10 @@
 # panDB
 
-The pipeline was used to generate panDB, a microbial reference database that contains pan-genomes of all bacterial, archaeal, fungal and viral species.
+The pipeline was used to generate panDB, a microbial reference database that contains pan-genomes of all bacterial, archaeal, fungal and viral species. It uses a novel iterative alignment algorithm to efficiently extract all non-redundant sequence segments from a given set of genome sequences.
 
 The pipeline was designed for parallel processing on a Portable Batch System (PBS).
+
+If you use panDB in your project, please cite [this](https://www.biorxiv.org/content/early/2017/11/07/214916).
 
 ## Dependencies:
 
